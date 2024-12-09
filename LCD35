@@ -3,8 +3,8 @@
 if [ ! -d /etc/X11/xorg.conf.d ]; then
 sudo mkdir -p /etc/X11/xorg.conf.d
 fi
-sudo cp ./usr/tft35a-overlay.dtb /boot/overlays/
-sudo cp ./usr/tft35a-overlay.dtb /boot/overlays/tft35a.dtbo
+sudo cp ./usr/waveshare35b-v2-overlay.dtb /boot/overlays/waveshare35b-v2.dtbo
+sudo cp ./usr/waveshare35b-v2-overlay.dtb /boot/overlays/
 
 sudo cp -rf ./boot/firmware/config.txt config.txt
 sudo echo "hdmi_force_hotplug=1" >> config.txt
