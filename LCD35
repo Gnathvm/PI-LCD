@@ -6,7 +6,7 @@ fi
 sudo cp ./usr/lcd35a-overlay.dtb /boot/overlays/lcd35a.dtbo
 sudo cp ./usr/lcd35a-overlay.dtb /boot/overlays/
 
-sudo cp -rf ./boot/firmware/config.txt config.txt
+sudo cp -rf /boot/firmware/config.txt ./usr/config.txt
 sudo echo "hdmi_force_hotplug=1" >> config.txt
 sudo echo "dtparam=i2c_arm=on" >> config.txt
 sudo echo "dtparam=spi=on" >> config.txt
@@ -18,7 +18,7 @@ sudo echo "hdmi_mode=87" >> config.txt
 sudo echo "hdmi_cvt 480 320 60 6 0 0 0" >> config.txt
 sudo echo "hdmi_drive=2" >> config.txt
 
-sudo cp -rf config.txt ./boot/firmware/config.txt
+sudo cp -rf ./usr/config.txt /boot/firmware/config.txt
 
 
 sudo cp -rf ./usr/99-calibration.conf-35-90  /etc/X11/xorg.conf.d/99-calibration.conf
