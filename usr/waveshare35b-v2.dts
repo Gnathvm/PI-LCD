@@ -47,7 +47,7 @@
 				pinctrl-names = "default";
 				pinctrl-0 = <&waveshare35b_pins>;
 
-				spi-max-frequency = <15000000>;
+				spi-max-frequency = <16000000>;
 				txbuflen = <32768>;
 				rotate = <90>;
 				bgr = <0>;
@@ -78,7 +78,7 @@
 				compatible = "ti,ads7846";
 				reg = <1>;
 
-				spi-max-frequency = <2000000>;
+				spi-max-frequency = <16000000>;
 				interrupts = <17 2>; /* high-to-low edge triggered */
 				interrupt-parent = <&gpio>;
 				pendown-gpio = <&gpio 17 1>;
