@@ -6,7 +6,7 @@ sudo apt-get install xserver-xorg-input-evdev xinput-calibrator -y
 
 sudo cp ./usr/lcd35a.dtb /boot/overlays/lcd35a.dtbo
 
-sudo cp /boot/firmware/config.txt ./usr/config.txt
+sudo cp /boot/config.txt ./usr/config.txt
 sudo echo "hdmi_force_hotplug=1" >> ./usr/config.txt
 sudo echo "dtparam=i2c_arm=on" >> ./usr/config.txt
 sudo echo "dtparam=spi=on" >> ./usr/config.txt
@@ -17,7 +17,7 @@ sudo echo "hdmi_mode=1" >> ./usr/config.txt
 sudo echo "hdmi_mode=87" >> ./usr/config.txt
 sudo echo "hdmi_cvt 480 320 60 6 0 0 0" >> ./usr/config.txt
 sudo echo "hdmi_drive=2" >> ./usr/config.txt
-sudo cp -rf ./usr/config.txt /boot/firmware/config.txt
+sudo cp -rf ./usr/config.txt /boot/config.txt
 
 if [ -f /etc/X11/xorg.conf.d/40-libinput.conf ]; then
 sudo rm -rf /etc/X11/xorg.conf.d/40-libinput.conf
