@@ -39,8 +39,6 @@ sudo make
 sudo install fbcp /usr/local/bin/fbcp
 cd - > /dev/null
 
-sudo raspi-config nonint do_wayland W1
-
 sudo sync
 sleep 1
 
