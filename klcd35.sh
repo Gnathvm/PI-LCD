@@ -12,7 +12,7 @@ sudo echo "hdmi_force_hotplug=1" >> ./usr/config.txt
 sudo echo "dtparam=i2c_arm=on" >> ./usr/config.txt
 sudo echo "dtparam=spi=on" >> ./usr/config.txt
 sudo echo "enable_uart=1" >> ./usr/config.txt
-sudo echo "dtoverlay=lcd35a:rotate=270" >> ./usr/config.txt
+sudo echo "dtoverlay=lcd35a" >> ./usr/config.txt
 sudo echo "hdmi_group=2" >> ./usr/config.txt
 sudo echo "hdmi_mode=1" >> ./usr/config.txt
 sudo echo "hdmi_mode=87" >> ./usr/config.txt
