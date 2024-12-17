@@ -4,6 +4,7 @@ sudo apt-get install cmake libraspberrypi-dev -y
 sudo apt-get install xserver-xorg-input-evdev -y
 sudo apt-get install xserver-xorg-input-evdev xinput-calibrator -y
 
+sudo cp ./usr/lcd35a.dtb /boot/overlays/
 sudo cp ./usr/lcd35a.dtb /boot/overlays/lcd35a.dtbo
 
 sudo cp /boot/config.txt ./usr/config.txt
