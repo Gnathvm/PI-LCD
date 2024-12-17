@@ -29,7 +29,8 @@ fi
 
 sudo cp -rf ./etc/rc.local /etc/
 sudo cp -rf ./usr/99-calibration35.conf  /etc/X11/xorg.conf.d/99-calibration.conf
-sudo cp -rf ./usr/cmdline.txt /boot/
+sudo cp -rf ./etc/cmdline.txt /boot/
+sudo cp -rf ./etc/modules /etc/
 sudo cp -rf /usr/share/X11/xorg.conf.d/10-evdev.conf /usr/share/X11/xorg.conf.d/45-evdev.conf
 sudo cp ./usr/inittab /etc/
 
