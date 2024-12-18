@@ -20,13 +20,6 @@ sudo echo "hdmi_cvt 480 320 60 6 0 0 0" >> ./usr/config.txt
 sudo echo "hdmi_drive=2" >> ./usr/config.txt
 sudo cp -rf ./usr/config.txt /boot/config.txt
 
-if [ -f /etc/X11/xorg.conf.d/40-libinput.conf ]; then
-sudo rm -rf /etc/X11/xorg.conf.d/40-libinput.conf
-fi
-if [ ! -d /etc/X11/xorg.conf.d ]; then
-sudo mkdir -p /etc/X11/xorg.conf.d
-fi
-
 sudo cp -rf ./etc/rc.local /etc/
 sudo cp -rf ./usr/99-calibration35.conf  /etc/X11/xorg.conf.d/99-calibration.conf
 sudo cp -rf ./etc/cmdline.txt /boot/
